@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #1E9600;
+    background: -webkit-linear-gradient(to right, #000000, #54544c, #173e0d);
+    background: linear-gradient(to right, #020202, #4c4c41, #113c06); 
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #222;
+    text-shadow: 1px 1px 4px #eee;
+}
+
+section {
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.card {
+    max-width: 250px;
+    height: fit-content;
+    background-color: rgb(152, 152, 152);
+    padding: 1rem;
+    border-radius: 7px;
+    border-bottom: 4px solid #222;
+    transition: .6s all ease;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover{
+    background-color: #222;
+    border-bottom: 4px solid #eee;
+}
+
+.card:hover h2{
+    color: #FFF200;
+}
+
+.card:hover p{
+    color: #eee;
+    visibility: visible;
+}
+
+.card:hover a{
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #eee;
+}
+
+.card h2 {
+    color: #222;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    color: #eee;
+    letter-spacing: 1px;
+    visibility: hidden;
+}
+
+.card a {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s all ease;
+    color: #222;
+    text-decoration: none;
+}
+
+.card a:hover {
+    
+    text-decoration: underline;
+    cursor: pointer;
+    color: #FFF200;
+}
